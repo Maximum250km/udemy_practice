@@ -154,3 +154,21 @@ fruit = {
 print(fruit['banana'])
 # キーに値が結びついているので、参照が早い
 
+# set型（就業）
+tx = {1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 5}
+print(tx)
+sx = {2, 2, 3, 3, 5, 7, 8}
+print(sx)
+wx = tx - sx
+print(wx)
+cx = sx - tx
+print(cx)
+vv = tx & sx
+print(vv)
+nb = tx | sx
+print(nb)
+# add関数でdict配列に追加できる　removeで削除　clear中身を削除
+# eg) 集合はSNSにて共通点を見つけ出すときに使える
+my_friends = {'a', 'b', 'd',}
+A_friend = {'d', 'c', 's'}
+print(my_friends & A_friend)
