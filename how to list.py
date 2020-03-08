@@ -122,3 +122,35 @@ rev1 = 100
 rev2 = 200
 rev1, rev2 = rev2, rev1
 print(rev1, rev2)
+# tupleを使った入れ替え
+# dictionally 型
+d = {'xx' : 10, 'yy': 20}
+print(d)
+print(d['xx'])
+d['xx'] = 'xxxxx'
+d['z'] = 200
+d[0] = 123
+print(d)
+# dictの関数は.keys(値)value（値についている内容）
+# update関数で数字をオーバーライドあるいは追加が可能
+ex = {'a': 1}
+ey = ex
+ey['a'] = 1000
+print(ex)
+print(ey)
+
+ax = {'a':1}
+bx = ax.copy()
+bx['a'] = 1000
+print(ax)
+print(bx)
+
+# dictの使い方
+fruit = {
+    'apple': 100,
+    'banana' :200,
+    'orange' :300,
+}
+print(fruit['banana'])
+# キーに値が結びついているので、参照が早い
+
