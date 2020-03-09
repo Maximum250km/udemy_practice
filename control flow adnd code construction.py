@@ -79,11 +79,30 @@ else:
 
 # inputで文字を入力できるようにする。
 # 今回は、if で宣言した内容と入力が一致するとループを抜ける仕組み
-while True:
-    word = input('Enter:')
-    # if word = 'ok':
-    num = int(word)
-    # if word =='ok':
-    if num == 100:
+# while True:
+#     word = input('Enter:')
+#     # if word = 'ok':
+#     num = int(word)
+#     # if word =='ok':
+#     if num == 100:
+#         break
+#     print('next')
+
+some_list = [1,2,3,4,5]
+for i in some_list:
+    print(i)
+for s in 'abcdef':
+    print(s)
+for n in ['my', 'name', 'is', 'John']:
+    print(n)
+
+for fruit in ['apple', 'banana', 'orange']:
+    if fruit == 'banana':
+        print('stop eating')
         break
-    print('next')
+    print(fruit)
+else:
+    print('I ate all')
+# range　関数 (開始する数字、カウントする数字数、何個とばし）
+for xx in range(2, 10):
+    print(xx, 'hello')
