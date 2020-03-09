@@ -88,7 +88,7 @@ else:
 #         break
 #     print('next')
 
-some_list = [1,2,3,4,5]
+some_list = [1, 2, 3, 4, 5]
 for i in some_list:
     print(i)
 for s in 'abcdef':
@@ -106,3 +106,40 @@ else:
 # range　関数 (開始する数字、カウントする数字数、何個とばし）
 for xx in range(2, 10):
     print(xx, 'hello')
+i = 0
+# enum
+for i, fruit in enumerate(['banana', 'apple', 'orange']):
+    print(i, fruit)
+
+# zip
+days = ['Mon', 'Tue', 'Wed']
+fruits = ['apple', 'banana', 'orange']
+drinks = ['coffe', 'tea', 'beer']
+for day, fruit, drink in zip(days, fruits, drinks):
+    print(day, fruit, drink)
+
+# dictのforメソッド　よく使う！！　kはkeys, vはvalueの略　itemsで各要素のキーと値に対してfor処理をする
+d = {'x': 100, 'y': 200}
+for k, v in d.items():
+    print(k, ':', v)
+
+
+# 関数定義(function)
+def say_something():
+# say_something()
+# f = say_something
+# f()
+    s = 'hi'
+    return s
+result = say_something()
+print(result)
+
+def what_is_this(color):
+    if color == 'red':
+        return 'tomato'
+    elif color == 'green':
+        return 'green pepper'
+    else:
+        return "I don't know"
+result = what_is_this('green')
+print(result)
