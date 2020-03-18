@@ -143,3 +143,36 @@ def what_is_this(color):
         return "I don't know"
 result = what_is_this('green')
 print(result)
+
+def menu(entree, drink, desert):
+    print(entree)
+    print(drink)
+    print(desert)
+menu(entree='beef', desert='beer', drink='ice')
+
+def test_func(x, l=[]):
+    l.append(x)
+    return l
+
+y = [1, 2, 3]
+r = test_func(100, y)
+print(r)
+
+def say_something(word, *args):
+    print(word)
+    for arg in args:
+        print(arg)
+say_something('hi', 'mike', 'nace')
+
+def menu2(**kwargs):
+    #print(kwargs)
+    for k, v in kwargs.items():
+        print(k, v)
+#d = {
+ #   'entree':'beef',
+ #  'drink': 'ice coffee',
+ # 'dessert':'ice'
+#}
+menu2(**d)
+#menu2(entree='beef', drink='coffee')
+
