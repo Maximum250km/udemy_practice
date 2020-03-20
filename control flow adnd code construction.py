@@ -176,3 +176,10 @@ def menu2(**kwargs):
 menu2(**d)
 #menu2(entree='beef', drink='coffee')
 
+def outer(a, b):
+   def plus(c, d):
+       return  c + d
+   r = plus(a, b)
+   print(r)
+
+outer(1, 2)
